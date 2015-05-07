@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body{
+            font-family: "微软雅黑";
+        }
+    </style>
+</head>
+
+
+<body>
+<div class="panel panel-danger" style="margin:50px auto;width:1559px;">
+    <div class="panel-heading">
+        <h3>3595平台服务器对接</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered" style="text-align:center;vertical-align:middle;">
+            <thead>
+            <tr align="center">
+                <td>GM后台未对接服务器</td>
+                <td>对接到3595平台服务器</td>
+            </tr>
+            </thead>
+            <tbody>
+                <volist name='unallot' id="vo">
+                    <tr>
+                        <td class="gm" pmc="pm{$i}" gmid="{$vo.autoid}">{$vo.name}</td>
+                        <td class="pm">{$platstr}</td>
+                    </tr>
+                </volist> 
+                <tr align="center">
+                    <td colspan="2">
+                        <button class="btn btn-primary okgo">确定</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+        $(document).ready(function(){
+            $(".okgo").click(function(){
+                var url = "{:U('Servercon/modifyallot')}";
+                var gmid = $(".gm").attr('gmid');
+                var pmid = $(".platser").val();
+                $.post(url,{gmid:gmid,pmid:pmid},function(data){
+                    //console.log(data);
+                    alert(data);
+                })
+            })
+        });
+    </script>
+</body>
+
+</html>

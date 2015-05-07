@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>对账平台</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="http://lib.sinaapp.com/js/jquery-ui/1.9.2/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery-ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="Public/Home/Js/global.js"></script>
+    <style>
+        body{
+            font-family: '微软雅黑';
+        }
+    </style>
+</head>
+<body>
+<div class="panel panel-danger" style="margin:50px auto;min-width:1000px;width:90%;">
+    <div class="panel-heading">
+        <label>对账平台</label>
+        <br/><br/>
+       <span>请选择查询日期：</span> <input class="datepicker" type="input" id="date" value="{$datetime}">
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered table-striped" style="text-align:center;vertical-align:middle;">
+            <thead>
+                <tr align="center">
+                	<td colspan="2">3595平台</td>
+                	<td colspan="2">GM后台</td>
+                </tr>
+                <tr align="center">
+                    <td>充值金额</td>
+                    <td>记录数目</td>
+                    <td>充值金额</td>
+                    <td>记录数目</td>
+                </tr>
+                <tr align="center">
+                    <td>{$pmsum}</td>
+                    <td>{$pmcount}</td>
+                    <td>{$gmsum}</td>
+                    <td>{$gmcount}</td>
+                </tr>
+                <tr align="center">
+                    <td>3595后台订单</td>
+                    <td>订单金额</td>
+                    <td>GM后台订单</td>
+                    <td>订单金额</td>
+                </tr>
+            </thead>
+            <tbody>
+                <for start="0" end="$largenum">
+                    <tr>
+                        <td><span class="pm" moneyc="pm{$i}">{$pmres[$i]['orderid']}</span></td>
+                        <td><span class="pmmoney">{$pmres[$i]['amount']|floor}</span></td>
+                        <td><span class="gm" moneyc="gm{$i}">{$gmres[$i]['m_billno']}</span></td>
+                        <td><span class="gmmoney">{$gmres[$i]['money']|floor}</span></td>
+                    </tr>
+                </for>
+            </tbody>
+        </table>
+    </div>
+</div>
+<form action="{:U('Test/checkbill')}" method="post" name="form1" id="form1" style="display:none;">
+	<input type="hidden" id="dateinput" name="dateinput2222"/>
+</form>
+<script>
+	$(document).ready(function(){
+		$("#date").change(function(){
+			var date = parseInt((new Date($(this).val() + ' 00:00:00')) / 1000);
+			$("#dateinput").val(date);
+            $("#autoidinput").val($("#autoid").val());
+			form1.submit();
+		});
+        $(".pm").each(function(index){
+            var pmorder = "3595mhj_" + $(this).html();
+            $(".gm").each(function(index){
+                if($(this).html() == pmorder){
+                    $(this).css('color','red');
+                    /*var classname = $(this).attr('moneyc');
+                    $("." + classname).css('display',none);*/
+                }
+            });
+        });
+        $(".gm").each(function(index){
+            var gmorder = $(this).html();
+            $(".pm").each(function(index){
+                var pmorder = "3595mhj_" + $(this).html();
+                if(pmorder == gmorder){
+                    $(this).css('color','orange');
+                    /*var classname = $(this).attr('moneyc');
+                    $("." + classname).css('display',none);*/
+                }
+            })
+        });
+        var pmmoney = 0;
+        $(".pmmoney").each(function(index){
+            pmmoney += parseInt($(this).html());
+        });
+        console.log(pmmoney);
+        var gmmoney = 0;
+        $(".gmmoney").each(function(index){
+            gmmoney += parseInt($(this).html());
+        });
+        console.log(gmmoney);
+	});
+</script>
+</body>
+</html>

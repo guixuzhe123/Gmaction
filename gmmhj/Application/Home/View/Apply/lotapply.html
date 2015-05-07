@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>申请充值</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="http://lib.sinaapp.com/js/jquery-ui/1.9.2/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery-ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="Public/Home/Js/global.js"></script> 
+    <style>
+    *{margin:0;padding: 0;font-family: '微软雅黑';list-style: none;}
+    .selectimitate{width: 157px;border: 1px solid #999;border-top: none;position: absolute;background: #fff;display: none;}
+    .optionimitate:hover{background: #2d6ca2;color: #fff;}
+    </style>
+</head>
+<body>
+    <div class="panel panel-danger" style="margin:50px auto;min-width:1000px;width:90%;">
+        <form method="post" action="">
+            <div class="panel-heading">
+                <h4>批量申请（通过邮件发送）</h4>
+                <label>区服:</label>
+                {$server_html}<br/><br/>
+                <label>角色列表(*):(可以输入角色id、账号、角色名，注意中英文符号区别,以英文','分割)</label><br/>
+                <input type="text" size="100" name="characters" value="" id="characters" /><br/><br/>
+                <label>元宝数量(*):</label><br/>
+                <input type="text" size="20" value="" name="emoney" /><br/><br/>
+                <label>邮件内容(*):</label><br/>
+                <input type="text" size="20" value="" name="apply_content" /><br/><br/>
+                <label>申请道具名称(*):(支持模糊查询)</label><br/>
+                <input type="text" size="20" value="" name="propname" id="propname" />
+                <div class="selectimitate">
+                    <volist name="props" id="vo">
+                        <div class="optionimitate" propid="{$vo.propid}">{$vo.propname}</div>
+                    </volist>
+                </div>
+                <input type="hidden" name="tempid" id="tempid">
+                <br/><br/>道具对应ID&nbsp;<input class="form-control" id="propid" style="width:100px;display:inline-block;"><br/><br/>
+                <label>道具列表(*):(可输入多个道具，先查询道具id，在下面按如下格式输入10023:10:0,第一个数字代表道具id，第2个数字代表数量，第3个数字代表是否绑定，0为绑定，1为不绑定，多个道具以英文','分割，如：10023:10:0,10024:20:1     注意：最后一个不需加逗号)</label><br/>
+                <input type="text" size="100" name="props" value="" id="props" /><br/><br/>
+                <input type="button" value="申请" class="submit"/>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+$(document).ready(function(){
+    $(".submit").click(function(){
+        var url = "{:U('Apply/sendlot')}";
+        var autoid = $("#autoid").val();
+        var characters = $("#characters").val();
+        var apply_reason = $("input[name='reason']").val()
+        var content = $("input[name='apply_content']").val();
+        var emoney = $("input[name='emoney']").val();
+        var props = $("input[name='props']").val();
+        $.post(url,{autoid:autoid,characters:characters,apply_reason:apply_reason,content:content,emoney:emoney,props:props,money:0},function(data){
+            console.log(data);
+            if(data == 1){
+                alert('申请成功！');
+                window.location.reload();
+            }else{
+                alert(data);
+            }
+        })
+    });
+    $("#propname").keyup(function(){
+        var keyword = $(this).val();
+        if(keyword == ''){
+            $(".selectimitate").css('display','none');
+        }else{
+            $(".optionimitate").each(function(index){
+                if($(this).html().indexOf(keyword) > -1){
+                    $(this).css('display','block');
+                }else{
+                    $(this).css('display','none');
+                }
+            });
+            $(".selectimitate").css('display','block');
+        }
+    });
+    $(".optionimitate").click(function(){
+        //alert($(this).html());
+        $("#propname").val($(this).html());
+        $("#tempid").val($(this).attr('propid'));
+        $("#propid").val($(this).attr('propid'));
+        $(".selectimitate").css('display','none');
+    })
+    $(".selectimitate").mouseleave(function(){
+        $(this).css('display','none');
+    });
+});
+    </script>
+    </html>

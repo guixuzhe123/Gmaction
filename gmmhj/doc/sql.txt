@@ -1,0 +1,5 @@
+
+if(date=='当天')
+	sql = "select count(level) as num,level from `character` group by level"
+
+	

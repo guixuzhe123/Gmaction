@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>无标题文档</title>
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+        <style>
+            body{
+                font-family: "微软雅黑";
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" id="test" class="control-form"><button class="control-form" id="test1">click</button>    
+        <script>
+            $(document).ready(function(){
+                $("#test1").click(function(){
+                    var platcode = $("#test").val();
+                    $.post("{:U('Online/onlineinterface')}",{platcode:platcode},function(data){
+                        alert(data);
+                    });
+                });
+            })
+        </script>
+    </body>
+</html>

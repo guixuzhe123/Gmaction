@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>历史等级分布</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <script src="__PUBLIC__/Flot/js/jquery.js"></script>    
+    <!--<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+	<!--加载flot资源-->
+    <link href="__PUBLIC__/Flot/css/examples.css" rel="stylesheet" type="text/css"/>
+    <script language="javascript" type="text/javascript" src="__PUBLIC__/Flot/js/jquery.flot.js"></script>
+    <!--加载flot资源结束-->
+
+    <style>
+        body{
+            font-family: '微软雅黑';
+        }
+        .body-left{
+            float: left;
+            width:20%;
+        }
+        .body-right{
+            float: right;
+            width:75%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function(){
+        $("#autoid").change(function(){
+        	$("input[name='autoidinput']").val($(this).val());
+        	form1.submit();
+		});
+		$("#autoid option").each(function(index){
+			var selectid = "{$selectid}";
+			if($(this).val() == selectid){
+				$(this).attr('selected','1');
+			}
+		});
+        var data1 = $("#leveljs").val();
+        //console.log(data1);
+        var response = jQuery.parseJSON(data1);
+        var data = [];
+        for(var i = 0;i < response.length;i++){
+            data.push([(response[i]['level']),(response[i]['per'])]);
+        }
+        var plot = $.plot("#placeholder",[{data:data,label:"level,单位:%"}],{
+            series:{
+                lines:{
+                    show:true
+                },
+                points:{
+                    show:true
+                }
+            },
+            grid:{
+                hoverable:true,
+                clickable:true
+            }
+        });
+
+        $("<div id='tooltip'></div>").css({
+            position:"absolute",
+            display:"none",
+            border:"1px solid #fdd",
+            padding:"2px",
+            "background-color":"#fee",
+            "font-size":"14px",
+            opacity:0.8
+        }).appendTo("body");
+
+        $("#placeholder").bind("plothover",function(event,pos,item){
+            if(item){
+                var x = item.datapoint[0].toFixed(2),
+                    y = item.datapoint[1].toFixed(2);
+                $("#tooltip").html("等级" + Math.floor(x) + "比率" + y + "%")
+                    .css({top:item.pageY + 5,left:item.pageX + 5})
+                    .fadeIn(200);
+            }else{
+                $("#tooltip").hide();
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+<div class="panel panel-danger" style="margin:50px auto;min-width:1000px;width:90%;">
+    <div class="panel-heading">
+        <h3>历史等级分布</h3>
+		<label>区服:</label>
+        {$server_html}
+    </div>
+    <form name="form1" id="form1" method="post" style="display:none;" action="{:U('Level/history')}">
+    	<input type="hidden" name="autoidinput">
+    </form>
+    <div class="panel-body">
+        <div class="body-left">
+            <table class="table table-bordered" style="text-align:center;vertical-align:middle;">
+                <thead>
+                    <tr align="center">
+                        <td>等级</td>
+                        <td>玩家人数</td>
+                        <td>比率</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <volist name="level" id="vo">
+                        <tr>
+                            <td>{$vo.level}</td>
+                            <td>{$vo.num}</td>
+                            <td>{$vo.per}%</td>
+                        </tr>
+                    </volist>
+                </tbody>
+            </table>
+        </div>
+        <div class="body-right">
+            <div class="demo-container">
+                <div id="placeholder" class="demo-placeholder"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" id="leveljs" value='{$leveljs}'>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>莽荒纪</title>
+<style type="text/css"> 
+* {margin:0; padding:0;}
+body{overflow:hidden;}
+html,body {height:100%; font:small/1.5 "宋体", serif; background-color: #000000;}
+#my_flash{height:100%;}
+<!--#footer{text-align:center; color:#ffffff;}-->
+</style>
+<script type="text/javascript" src="js/other.js"></script>
+<!--<script type="text/javascript" src="js/qzone.js"></script> -->
+<script type="text/javascript">
+//var sFrom=getQueryString("pf");
+//if(sFrom=="qzone"){
+//    document.write("<script type='text/javascript' charset='utf-8' src='http://fusion.qq.com/fusion_loader?appid=1101059905&platform=qzone'><\/script>");
+//}
+//else if(sFrom=="pengyou"){
+//    document.write("<script type='text/javascript' charset='utf-8' src='http://fusion.qq.com/fusion_loader?appid=1101059905&platform=pengyou'><\/script>");
+//}
+
+function thisMovie(movieName) {
+	if (navigator.appName.indexOf("Microsoft") != -1) {
+		return document.getElementById( movieName ) || window[movieName];
+	}
+	else {
+		return document[movieName] || window[movieName];
+	}
+}
+//0.提取URL中的参数
+function getQueryString(key){
+    var searchString = document.location.search.toString(); 
+    var returnValue = '';
+    if (searchString.substr(0,1)=='?' && searchString.length>1)
+    {
+        var queryString = searchString.substring(1,searchString.length)
+        var queryList = queryString.split('&');
+        for (var i=0; i<queryList.length; i++)
+        {
+            var oneQuery = queryList[i].split('=');
+            if (oneQuery[0]==key && oneQuery.length==2)
+            {
+                returnValue = oneQuery[1];
+            }
+        }
+    }
+    return returnValue;
+}
+//挽留页面
+function  checkLeave(){
+	var msg="确定要退出《天命三国》吗？";
+	return msg;
+}
+function basic(){
+	window.onbeforeunload =  checkLeave;
+}
+function getServerId(){
+        return "5";
+}
+function ClientDirectoryHost()
+{
+    return "s13.app1101059905.qqopenapp.com";
+}
+function ClientDirectoryPort()
+{
+    return (8002);
+}
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+	setMainSwfHeight();	
+	
+	$(window).resize(function() {
+		setMainSwfHeight();
+	});
+	
+	function setMainSwfHeight(){
+		//$("#my_flash").height($(document.body).height() - 25);
+		$("#my_flash").height($(document.body).height());
+	}
+});
+$(document).ready(function(){
+	var random = Math.random();
+	//var flashvars =  {"v0102":"3","url":"http://app1101059905.imgcache.qzoneapp.com/app1101059905/client_new/"};
+	var flashvars =  {"v0102":"3","url":""};
+	var params = {bgcolor:"#000000"};
+	var attributes = {id: "flash"};
+	params.wmode="window";
+	params.allowScriptAccess="always";
+	var height="100%";
+	var width= "100%";
+	//swfobject.embedSWF("http://app1101059905.imgcache.qzoneapp.com/app1101059905/client_new/GameLoading.swf?"+random, "flash", width, height, "10.0.42", false, flashvars, params, attributes);
+	swfobject.embedSWF("Main.swf", "flash", width, height, "10.0.42", false, flashvars, params, attributes);
+});
+</script>
+</head>
+ 
+<body>
+	<div id="my_flash">
+		<div id="flash">
+		</div>
+	</div>
+	<!--
+	<div id="footer">
+		<script type="text/javascript"> 
+			document.write("您的QQ平台OPENID："+getQueryString("openid"));
+		</script>
+		<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=800021855&amp;site=qq&amp;menu=yes" style="color:#00ff00; text-decoration: none;">客服QQ</a>
+		<a href="http://e.t.qq.com/ddzs_wb" target="_blank" style="color:#00ff00; text-decoration: none;">收听官方微博</a>
+		<a href="javascript:void(0);" onclick="add2Favorite( 'http://rc.qzone.qq.com/1101059905' );return false;" style="color:#00ff00; text-decoration: none;">添加收藏夹</a>
+		《<font color="#ffff00"><b>天命三国</b></font>》由"中卓游戏"提供，若您在游戏中遇到问题，可在[<a href="http://bbs.open.qq.com/forum.php?mod=forumdisplay&action=list&fid=1447" target="_blank" style="color:#00ff00;">点击进入&gt;&gt;交流论坛</a>]进行交流，或联系客服电话：021-62296851
+	</div>
+	-->
+</body>
+</html>
+

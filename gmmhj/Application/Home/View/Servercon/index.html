@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body{
+            font-family: "微软雅黑";
+        }
+    </style>
+</head>
+
+
+<body>
+<div class="panel panel-danger" style="margin:50px auto;width:1559px;">
+    <div class="panel-heading">
+        <h3>区服列表</h3>
+        <h4>运营平台：<select class="form-control" name="platform" id="platform" style="width:150px;display:inline;" selectid="{$selectid}">
+            <option value="0">请选择运营平台</option>
+            <volist name="plat" id="vo">
+                <option value="{$vo.platid}" selurl="{$vo.href}" class="topsel{$vo.platid}">{$vo.platname}</option>
+            </volist>
+        </select>
+    </h4>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered" style="text-align:center;vertical-align:middle;">
+            <thead>
+            <tr align="center">
+                <td>服务器ID</td>
+                <td>服务器名称</td>
+                <td>开服时间</td>
+                <td>运营平台</td>
+				<td>oa连接</td>
+                <td>gameserver连接</td>
+                <td>socketip</td>
+                <td>socketport</td>
+                <td>caship</td>
+                <td>cashport</td>
+                <td>平台对应验证码</td>
+                <td>操作</td>
+            </tr>
+            </thead>
+            <tbody>
+                <volist name="serverinfo" id="vo">
+                <tr>
+                    <td><input type="text" class="form-control" value="{$vo.id}" id="gameid{$vo.autoid}" name="" style="width:120px;margin:0 auto;"></td>
+                    <td><input type="text" class="form-control" value="{$vo.name}" id="name{$vo.autoid}" name="" style="width:100px;margin:0 auto;"></td>
+                    <td>{$vo.create_time|date="Y-m-d",###}</td>
+                    <td>
+                        <select class="form-control" name="platform" id="platform1_{$vo.autoid}" style="width:150px;margin:0 auto;">
+                            <volist name="plat" id="vop">
+                                <option value="{$vop.platid}" void="{$vo.platid}" class="platselect">{$vop.platname}</option>
+                            </volist>
+                        </select>
+                    </td>
+					<td><textarea class="form-control" id="oa_connection_{$vo.autoid}" style="margin:0 auto;" rows="3">{$vo.oa_connection}</textarea></td>
+                    <td><textarea class="form-control" id="gs_connection_{$vo.autoid}" style="margin:0 auto;" rows="3">{$vo.gs_connection}</textarea></td>
+                    <td><input type="text" class="form-control" value="{$vo.socketip}" id="socketip_{$vo.autoid}" name="" style="margin:0 auto;"></td>
+					<td><input type="text" class="form-control" value="{$vo.socketport}" id="socketport_{$vo.autoid}" name="" style="margin:0 auto;"></td>
+                    <td><input type="text" class="form-control" value="{$vo.caship}" id="caship_{$vo.autoid}" name="" style="margin:0 auto;"></td>
+                    <td><input type="text" class="form-control" value="{$vo.cashport}" id="cashport_{$vo.autoid}" name="" style="margin:0 auto;"></td>
+                    <td>{$vo.platcode}</td>
+                    <td>
+                        <button type="button" class="btn btn-primary addserver">增加</button>
+                        <button type="button" class="btn btn-primary updateser" autoid="{$vo.autoid}">更新</button>
+                        <button type="button" class="btn btn-danger delser" autoid="{$vo.autoid}">删除</button>
+                    </td>
+                </tr>
+                </volist>
+                <!-- 新增区服列表，默认为隐藏 -->
+                <tr style="display:none;" class="addtr">
+                    <td>
+                        <input type="text" class="form-control" value="" id="addgameid" name="" style="width:120px;margin:0 auto;">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" value="" id="addname" name="" style="width:100px;margin:0 auto;">
+                    </td>
+                    <td></td>
+                    <td>
+                        <select class="form-control" name="platform" id="platform2" style="width:150px;margin:0 auto;">
+                            <volist name="plat" id="vop">
+                                <option value="{$vop.platid}">{$vop.platname}</option>
+                            </volist>
+                        </select>
+                    </td>
+                    <td><textarea class="form-control" id="addoa_connection" style="margin:0 auto;" rows="3"></textarea></td>
+                    <td><textarea class="form-control" id="addgs_connection" style="margin:0 auto;" rows="3"></textarea></td>
+                    <td>
+                        <input type="text" class="form-control" id="addsocketip"/>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" id="addsocketport"/>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" id="addcaship"/>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" id="addcashport"/>
+                    </td>
+                    <td></td>
+                    <td>
+                        <button type="button" class="btn btn-primary addserver1">增加</button>
+                        <button type="button" class="btn btn-primary closeadd">取消</button>
+                        <button type="button" class="btn btn-primary" style="visibility:hidden;">增加</button>
+                    </td>
+                </tr>
+                <tr><td colspan="12" style="align:right;">oa连接和gameserver连接格式：mysql：//数据库用户名：数据库密码@服务器IP：端口/数据库名#字符编码</td></tr>
+                <tr><td colspan="12" style="align:right;">{$page}</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+        $(document).ready(function(){
+            $(".platselect").each(function(index){
+                if($(this).val() == $(this).attr('void')){
+                    $(this).attr('selected',1);
+                }
+            });
+            /*固定样式*/
+            $("#col1").css('width',203);
+            $("#col2").css('width',203);
+
+            /*点击添加*/
+            $(".addserver").click(function(){
+                //alert("222");
+                $(".addtr").css('display','table-row');
+            });
+            $(".closeadd").click(function(){
+                $(".addtr").css('display','none');
+            });
+            //添加进数据库
+            $(".addserver1").click(function(){
+                var url = "{:U('Servercon/ajaxadd')}";
+                var gameid = $("#addgameid").val();
+                if(gameid == ''){
+                    alert('请输入服务器ID！');
+                    return;
+                }
+                var name = $("#addname").val();
+                if(name == ''){
+                    alert("请输入服务器名称！");
+                    return;
+                }
+                var platid = $("#platform2").val();
+                var oa_connection = $("#addoa_connection").val();
+                var gs_connection = $("#addgs_connection").val();
+                var socketip = $("#addsocketip").val();
+                var socketport = $("#addsocketport").val();
+                var caship = $("#addcaship").val();
+                var cashport = $("#addcashport").val();
+                $.post(url,{id:gameid,name:name,platid:platid,oa_connection:oa_connection,gs_connection:gs_connection,socketip:socketip,socketport:socketport,caship:caship,cashport:cashport},function(data){
+                    if(data == 1){
+                        alert('添加成功！');
+                        window.location.reload();
+                    }else{
+                        alert('添加失败！');
+                    }
+                    //console.log(data);
+                });
+            });
+            //选择平台
+            $("#platform").val($("#platform").attr('selectid'));
+            $("#platform").change(function(){
+                var platid = $(this).val();
+                if(platid != 0){
+                    var url = $(".topsel" + platid).attr('selurl');
+                    window.location.href = url;
+                }else{
+                    url = "{:U('Servercon/index')}";
+                    window.location.href = url;
+                }
+            });
+            //更新数据
+            $(".updateser").click(function(){
+                var autoid = $(this).attr('autoid');
+                var url = "{:U('Servercon/ajaxupdate')}";
+                var id = $("#gameid" + autoid).val();
+                var name = $("#name" + autoid).val();
+                var platid = $("#platform1_" + id).val();
+				var gs_connection = $("#gs_connection_" + autoid).val();
+				var oa_connection = $("#oa_connection_" + autoid).val();
+                var socketip = $("#socketip_" + autoid).val();
+                var socketport = $("#socketport_" + autoid).val();
+                var caship = $("#caship_" + autoid).val();
+                var cashport = $("#cashport_" + autoid).val();
+                $.post(url,{autoid:autoid,id:id,name:name,platid:platid,gs_connection:gs_connection,oa_connection:oa_connection,socketip:socketip,socketport:socketport,caship:caship,cashport:cashport},function(data){
+                    if(data == 1){
+                        alert('更新成功！');
+                        window.location.reload();
+                    }else{
+                        alert('更新失败！请联系开发人员！');
+                    }
+                });
+            });
+            //删除数据
+            $(".delser").click(function(){
+                var autoid = $(this).attr('autoid');
+                var url  = "{:U('Servercon/ajaxdel')}";
+                if(confirm('确定删除该记录？')){
+                    $.post(url,{autoid:autoid},function(data){
+                        if(data == 1){
+                            alert('删除成功！');
+                            window.location.reload();
+                        }else{
+                            alert('删除失败！请联系开发人员！');
+                        }
+                        //alert(data);
+                    })
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

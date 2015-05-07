@@ -1,0 +1,42 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>每小时在线</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="http://lib.sinaapp.com/js/jquery-ui/1.9.2/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery-ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="Public/Home/Js/global.js"></script>
+    <style>
+        body{
+            font-family: '微软雅黑';
+        }
+    </style>
+</head>
+<body>
+    <form action="http://119.29.59.243:1228" method="POST">
+        服务器id：<input type="text" name="sid"/><br/>
+        账号：<input type="text" name="account"/><br/>
+        角色名：<input type="text" name="charactername"/><br/>
+        角色id<input type="text" name="characterid"/><br/>
+        登录ip<input type="text" name="ip"/><br/>
+        频道id<input type="text" name="channel"/><br/>
+        时间<input type="text" name="time"/><br/>
+        内容<input type="text" name="content"/><br/>
+        <input type="submit" value="submit"/>
+    </form>
+<script>
+	$(document).ready(function(){
+        s = "啊<font class='findkeyword'>哈</font>哈";
+        //preg_match('/(.*)<font.*>(.*)<\/font>(.*)/',$content,$matched);
+        ss = s.replace(/(.*)<font.*>(.*)<\/font>(.*)/,"$1$2$3");
+        alert(ss);
+	});
+</script>
+</body>
+</html>

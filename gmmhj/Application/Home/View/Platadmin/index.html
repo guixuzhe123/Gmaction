@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body{
+            font-family: "微软雅黑";
+        }
+    </style>
+</head>
+
+
+<body>
+<div class="panel panel-danger" style="margin:50px auto;min-width:1000px;width:90%;">
+    <div class="panel-heading">
+        <h3>平台管理</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered" style="text-align:center;vertical-align:middle;">
+            <thead>
+            <tr align="center">
+                <td id="col1">平台ID</td>
+                <td id="col2">平台名称</td>
+                <td>操作</td>
+            </tr>
+            </thead>
+            <tbody>
+                <volist name="plat" id="vo">
+                <tr>
+                    <td><input type="text" class="form-control" value="{$vo.platid}" id="platid{$vo.id}" name="" style="width:150px;margin:0 auto;"></td>
+                    <td><input type="text" class="form-control" value="{$vo.platname}" id="platname{$vo.id}" name="" style="width:150px;margin:0 auto;"></td>
+                    <td>
+                        <button type="button" class="btn btn-primary addserver">增加</button>
+                        <button type="button" class="btn btn-primary updateser" sid="{$vo.id}">更新</button>
+                        <button type="button" class="btn btn-danger delser" sid="{$vo.id}">删除</button>
+                    </td>
+                </tr>
+                </volist>
+                <!-- 新增运营平台，默认为隐藏 -->
+                <tr style="display:none;" class="addtr">
+                    <td>
+                        <input type="text" class="form-control" value="" id="addplatid" name="" style="width:150px;margin:0 auto;">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" value="" id="addplatname" name="" style="width:150px;margin:0 auto;">
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary addserver1">增加</button>
+                        <button type="button" class="btn btn-primary closeadd">取消</button>
+                        <button type="button" class="btn btn-primary" style="visibility:hidden;">增加</button>
+                    </td>
+                </tr>
+                <tr><td colspan="3" style="align:right;">{$page}</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+        $(document).ready(function(){
+
+            /*点击添加*/
+            $(".addserver").click(function(){
+                $(".addtr").css('display','table-row');
+            });
+            $(".closeadd").click(function(){
+                $(".addtr").css('display','none');
+            });
+            //添加进数据库
+            $(".addserver1").click(function(){
+                var url = "{:U('Platadmin/ajaxadd')}";
+                var platid = $("#addplatid").val();
+                if(platid == ''){
+                    alert('请输入运营平台ID！');
+                    return;
+                }
+                var platname = $("#addplatname").val();
+                if(platname == ''){
+                    alert("请输入运营平台名称！");
+                    return;
+                }
+                $.post(url,{platid:platid,platname:platname},function(data){
+                    if(data == 1){
+                        alert('添加成功！');
+                        window.location.reload();
+                    }else{
+                        alert('添加失败！');
+                    }
+                });
+            });
+            //更新数据
+            $(".updateser").click(function(){
+                var id = $(this).attr('sid');
+                var url = "{:U('Platadmin/ajaxupdate')}";
+                var platid = $("#platid" + id).val();
+                var platname = $("#platname" + id).val();
+                $.post(url,{id:id,platid:platid,platname:platname},function(data){
+                    if(data == 1){
+                        alert('更新成功！');
+                        window.location.reload();
+                    }else{
+                        alert('更新失败！请联系开发人员！');
+                    }
+                });
+            });
+            //删除数据
+            $(".delser").click(function(){
+                var id = $(this).attr('sid');
+                var url  = "{:U('Platadmin/ajaxdel')}";
+                if(confirm('确定删除该记录？')){
+                    $.post(url,{id:id},function(data){
+                        if(data == 1){
+                            alert('删除成功！');
+                            window.location.reload();
+                        }else{
+                            alert('删除失败！请联系开发人员！');
+                        }
+                    })
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>My Fortune</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!--加载flot资源-->
+    <link href="__PUBLIC__/Flot/css/examples.css" rel="stylesheet" type="text/css"/>
+    <script language="javascript" type="text/javascript" src="__PUBLIC__/Flot/js/jquery.flot.js"></script>
+    <!--加载flot资源结束-->
+
+
+    <style>
+        body {
+            font-family: "微软雅黑";
+        }
+
+    </style>
+    <script>
+        $(document).ready(function () {
+                        var wvdata = [];
+                        for(var i = 0;i < 10;i++){
+                            wvdata.push([i,(i * 2)]);
+                        }
+                        $.plot("#placeholder", [
+                            {data: wvdata, label: "等级分布"}
+                        ], {
+                        series: {
+                            lines: {
+                                show: true
+                            },
+                            points: {
+                                show: true
+                            }
+                        },
+                        grid: {
+                            hoverable: true,
+                            clickable: false
+                        }
+                        });
+                        
+                
+                $("<div id='tooltip'></div>").css({
+                        position: "absolute",
+                        display: "none",
+                        border: "1px solid #fdd",
+                        padding: "2px",
+                        "background-color": "#fee",
+                        opacity: 0.80
+                    }).appendTo("body");
+                    $("#placeholder").bind("plothover", function (event, pos, item) {
+                        if (item) {
+                            var x = item.datapoint[0].toFixed(2),
+                                    y = item.datapoint[1].toFixed(2);
+                            $("#tooltip").html(item.series.label + y)
+                                    .css({top: item.pageY + 5, left: item.pageX + 15})
+                                    .fadeIn(200);
+                        } else {
+                            $("#tooltip").hide();
+                        }
+                    });
+        });
+    </script>
+</head>
+
+
+<body>
+<div class="panel panel-primary" style="margin:50px auto;width:800px;">
+    <div class="panel-heading">
+        <h3 align="center">未更新赛果记录</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="testback">
+    <div class="demo-container">
+        <div id="placeholder" class="demo-placeholder"></div>
+    </div>
+</div>
+</body>
+
+</html>

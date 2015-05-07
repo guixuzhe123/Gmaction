@@ -1,0 +1,687 @@
+[ 2015-05-06T00:39:45+08:00 ] 120.36.48.241 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T01:31:25+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T01:31:29+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T01:31:30+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T01:31:32+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T01:56:57+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T01:56:59+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T01:57:27+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:18:02+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:24:13+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:25:31+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:26:19+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:27:07+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:33:59+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:35:40+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:39:59+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:49:05+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:49:32+08:00 ] 113.87.30.179 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:49:34+08:00 ] 113.87.30.179 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:49:36+08:00 ] 113.87.30.179 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:50:51+08:00 ] 113.87.30.179 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:55:00+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:55:33+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:56:07+08:00 ] 113.87.30.179 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:56:08+08:00 ] 113.87.30.179 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:56:58+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:56:59+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:57:00+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:57:03+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:57:04+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T02:57:14+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T03:28:05+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T03:41:31+08:00 ] 111.122.77.49 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-06T05:18:15+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:18:17+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:19:14+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:19:15+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:19:22+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:19:26+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:21:02+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:24:25+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:24:27+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:25:36+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:26:10+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:26:11+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:26:14+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:26:15+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:26:41+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:27:30+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:33:02+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:33:03+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:38:39+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:38:39+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:39:43+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:39:44+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:39:55+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:43:01+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:43:52+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T05:43:52+08:00 ] 14.28.135.142 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T06:09:32+08:00 ] 61.41.4.6 /bvbzi19823.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+ERR: 无法加载模块:Bvbzi19823
+
+[ 2015-05-06T08:57:08+08:00 ] 113.87.30.179 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T08:57:09+08:00 ] 113.87.30.179 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T08:57:11+08:00 ] 113.87.30.179 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T08:57:14+08:00 ] 113.87.30.179 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T09:26:04+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T09:26:06+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T09:37:25+08:00 ] 58.135.80.156 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-06T09:40:14+08:00 ] 113.133.242.158 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-06T10:15:35+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:15:37+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:16:41+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:20:28+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:20:34+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:28:39+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:34:27+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:46:41+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:47:20+08:00 ] 218.204.14.77 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-06T10:58:09+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:58:11+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:58:26+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:58:29+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:58:35+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:58:38+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:58:47+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:58:51+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:59:15+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:59:17+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:59:28+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:59:30+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:59:41+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T10:59:45+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:02:40+08:00 ] 117.81.229.165 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:21:16+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:21:32+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:21:36+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:21:40+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:21:54+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:22:18+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:22:31+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:22:33+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:23:04+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:25:41+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:33:37+08:00 ] 14.115.137.118 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-06T11:38:53+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:45:48+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T11:59:09+08:00 ] 121.204.64.173 /js/pie.htc
+ERR: 无法加载模块:Js
+
+[ 2015-05-06T12:10:59+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T12:11:06+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T12:11:07+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T12:11:26+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T14:16:27+08:00 ] 115.229.220.116 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-06T14:35:32+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T14:35:42+08:00 ] 117.136.40.174 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T14:38:37+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T14:40:09+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T14:42:06+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T14:42:21+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T14:44:56+08:00 ] 113.102.143.38 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T14:44:56+08:00 ] 113.102.143.38 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T14:47:16+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T14:47:27+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T14:57:09+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:15:09+08:00 ] 124.207.73.150 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-06T15:20:57+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:21:01+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:21:09+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:21:13+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:21:18+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:25:22+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:25:24+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:25:25+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:25:37+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:27:16+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:27:19+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:27:25+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:28:52+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:29:06+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:29:12+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:29:14+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:29:22+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:30:50+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:05+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:08+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:10+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:13+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:18+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:21+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:31+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:34+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:34+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:38+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:40+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:44+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:45+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:48+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:31:56+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:01+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:04+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:10+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:12+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:25+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:28+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:29+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:30+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:36+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:37+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:38+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:33:40+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:34:04+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:41:27+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:56:31+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:57:41+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:58:11+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T15:58:20+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T16:10:43+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T16:11:03+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T16:27:46+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T16:27:47+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T16:30:36+08:00 ] 112.5.111.127 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:11:43+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:12:14+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:15:19+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:15:32+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:15:40+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:16:01+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:16:12+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:16:51+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:17:36+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:17:49+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:18:41+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:43:43+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:43:51+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:44:41+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:47:49+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T17:57:14+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T18:02:49+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T18:06:24+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T18:08:52+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T18:10:13+08:00 ] 113.116.60.107 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T18:52:53+08:00 ] 223.10.243.55 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T20:37:47+08:00 ] 157.55.39.62 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+ERR: 无法加载模块:Robots
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-06T20:46:13+08:00 ] 121.204.64.173 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T20:46:13+08:00 ] 121.204.64.173 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T21:02:44+08:00 ] 183.54.80.18 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T21:24:41+08:00 ] 183.17.208.152 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T21:24:46+08:00 ] 183.17.208.152 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T21:24:52+08:00 ] 183.17.208.152 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T21:34:00+08:00 ] 207.46.13.44 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+ERR: 无法加载模块:Robots
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-06T21:47:54+08:00 ] 116.76.123.88 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-06T23:34:46+08:00 ] 111.13.102.6 /robots.txt
+ERR: 无法加载模块:Robots
+

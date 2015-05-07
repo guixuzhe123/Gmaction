@@ -1,0 +1,14 @@
+359平台用户登录接口
+
+1、接口URL：http://www.3595.com/Interface/index.php/Home/Login/logincheck
+2、参数以get形式传入，参数名依次为username,password,key,分别代表用户名，密码，密钥，完整URL如下所示：
+	http://www.3595.com/Interface/index.php/Home/Login/logincheck/username/1283293845@qq.com/password/m11/key/1f294f608302843e90eec363ac6a2fc5
+3、密钥计算方法：当日的月份与日期和mhj三个字母混合之后再进行md5加密，例：日期为2014/12/10，原始字符串为m12h10j,再进行md5加密生成密钥。
+4、结果以json格式返回，参数如下：
+	status		=>	状态值，1为验证成功，0为验证失败
+	error		=>	错误信息:
+					check pass		=>	验证通过
+					pwd erro		=>	密码错误
+					user not exist	=>	用户不存在
+					key not mathc	=>	密钥不匹配
+	username	=>	用户名

@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body{
+            font-family: "微软雅黑";
+        }
+        *{
+            list-style: none;
+        }
+        .label{
+            color:#333;
+        }
+        .table>tbody>tr>td{
+            border-top:none;
+        }
+        .menuson{
+            display: none;
+        }
+        .title{margin-left: 20px;cursor: pointer;}
+    </style>
+</head>
+
+
+<body>
+<div class="panel panel-danger" style="margin:50px auto;min-width:1000px;width:90%;">
+    <div class="panel-heading">
+        <h3>管理员列表</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered" style="text-align:center;vertical-align:middle;">
+            <thead>
+            <tr align="center">
+                <td id="col1">用户名</td>
+                <td>可操作模块</td>
+                <td style="width:250px;">操作</td>
+            </tr>
+            </thead>
+            <tbody>
+                <volist name="user" id="vo">
+                <tr>
+                    <td>{$vo.username}</td>
+                    <td class="blockid update{$i}">{$vo.blockid}</td>
+                    <td>
+                        <neq name="vo.blockid" value="0">
+                        <button type="button" class="btn btn-primary updateblock" uid="{$vo.id}" username="{$vo.username}" forclass='update{$i}'>更新操作模块</button>
+                        <button type="button" class="btn btn-danger deluser" uid="{$vo.id}">删除</button>
+                        </neq>
+                    </td>
+                </tr>
+                </volist>
+                <tr><td colspan="3">
+                    <button type="button" class="btn btn-primary adduser">增加管理员</button>
+                </td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div style="position:absolute;background:black;top:0;opacity:0.9;display:none;" class="adduserdiv adduserdiv1">
+    <div class="panel panel-danger adduserpanel" style="margin:50px auto;width:300px;">
+        <div class="panel-body">
+            <table class="table">
+                <tr><td colspan="2" align="center">添加管理员</td></tr>
+                <tr>
+                    <td align="right" style="width:100px;padding-top:15px;">用户名：</td>
+                    <td><input class="form-control username1" type="text" name="" value="" placeholder="用户名"/></td>
+                </tr>
+                <tr>
+                    <td align="right" style="padding-top:15px;">密码：</td>
+                    <td><input class="form-control password1" type="password" name="" value="" placeholder="密码"/></td>
+                </tr>
+                <tr>
+                    <td align="right" style="padding-top:15px;">确认密码：</td>
+                    <td><input class="form-control password2" type="password" name="" value="" placeholder="确认密码"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="button" class="btn btn-primary add1">添加</button>
+                        <button type="button" class="btn btn-primary cancel01">取消</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div style="position:absolute;background:black;top:0;opacity:0.9;display:none;" class="adduserdiv updateblock1">
+    <div class="panel" style="margin:50px auto;width:600px;">
+        <div class="panel-body">
+            <div style="text-align:center;">
+                <h3>更新可操作模块</h3>
+                <h4 class="user1">当前用户：{$loginuser},被操作用户：<span class="user2"></span></h4>
+            </div>
+            <div class="div1">
+                <!-- <dd>
+                    <div class="title block" blockname="100">
+                        运营平台、区服管理
+                    </div>
+                    <ul class="menuson">
+                        <li class="block"><cite></cite><input type="checkbox" name="input1" value="10010"/>区服列表<i></i></li>
+                        <li class="block"><cite></cite><input type="checkbox" name="input1" value="10020"/>平台管理<i></i></li>
+                    </ul>
+            </dd> -->
+            <volist name="list" id="vo1">
+                <div class="title block" blockname="{$vo1.blocktitle}">
+                    {$vo1.blockname}
+                </div>
+                <ul class="menuson">
+                    <li class="block"><cite></cite><input type="checkbox" name="allselect"/>全选<i></i></li>
+                    <volist name="vo1.listtwo" id="vo2">
+                        <li class="block"><cite></cite><input type="checkbox" name="input1" value="{$vo2.blocktitle}" blockname='{$vo2.blockname}'/>{$vo2.blockname}<i></i></li>
+                    </volist>
+                </ul>
+                <hr/>
+            </volist>
+            </div>
+            <div style="text-align:center;">
+                <button type="button" class="btn btn-primary save1">保存修改</button>
+                <button type="button" class="btn btn-primary cancel01">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+        $(document).ready(function(){
+            $(".adduserdiv").css('width',$("body").css('width'));
+            $(".adduserdiv").css('height',2000);
+
+            $(".blockid").each(function(index){
+                if($(this).html() == 0){
+                    $(this).html("所有模块");
+                }
+                if($(this).html() == 999){
+                    $(this).html("没有模块可操作");
+                }
+            });
+
+            //添加管理员
+            $(".adduser").click(function(){
+                $(".adduserdiv1").css('display','block');
+            });
+            $(".cancel01").click(function(){
+                $(".adduserdiv").css('display','none');
+            });
+            $(".username1").blur(function(){
+                var username = $(this).val();
+                if(username == ''){
+                    alert('用户名不能为空');
+                    return;
+                }else{
+                    var url = "{:U('Home/Auth/checkusername')}";
+                    $.post(url,{username:username},function(data){
+                        if(data == 1){
+                            alert('该用户名已经被使用，请重新输入！');
+                            return;
+                        }
+                    });
+                }
+            });
+            $(".add1").click(function(){
+                var username = $(".username1").val();
+                var password = $(".password1").val();
+                var passwordcon = $(".password2").val();
+                if(username == ''){
+                    alert('用户名不能为空');
+                    return;
+                }
+                if(password == ''){
+                    alert('密码不能为空！');
+                    return;
+                }
+                if(password != passwordcon){
+                    alert('两次密码输入不一致，请重新输入！');
+                    return;
+                }
+                var url = "{:U('Home/Auth/adduser')}";
+                $.post(url,{username:username,password:password},function(data){
+                    if(data == 1){
+                        alert('添加成功！');
+                        window.location.reload();
+                    }else{
+                        alert('添加失败！');
+                        return;
+                    }
+                });
+            });
+            //更新操作模块
+            $(".updateblock").click(function(){
+                var forclass = $(this).attr('forclass');
+                var blocknames = $("." + forclass).html();
+                var namearr = blocknames.split(",");
+                $("input[name='input1']").each(function(index){
+                    var tempname = $(this).attr('blockname');
+                    if(jQuery.inArray(tempname,namearr) > -1){
+                        $(this).trigger('click');
+                    }
+                })
+                var username = $(this).attr('username');
+                $(".user2").html(username);
+                $(".updateblock1").show();
+            });
+            $('.title').click(function () {
+                var $ul = $(this).next('ul');
+                $('dd').find('ul').slideUp();
+                if ($ul.is(':visible')) {
+                    $(this).next('ul').slideUp();
+                } else {
+                    $(this).next('ul').slideDown();
+                }
+            });
+            $("input[name=input1]").each(function(idnex){
+                $(this).click(function(){
+                    if($(this).attr('checked') == 'checked'){
+                        $(this).attr('checked',false);
+                    }else{
+                        $(this).attr('checked',1);
+                    }
+                });
+            });
+            $(".save1").click(function(){
+                var str = '';
+                $("input[name=input1]").each(function(){
+                    if($(this).attr('checked')){
+                        if(str == ''){
+                            str += $(this).val();
+                        }else{
+                            str += ',' + $(this).val();
+                        }
+                    }
+                });
+                if(str == ''){
+                    alert('没有分配任何模块！');
+                    return;
+                }else{
+                    var url = "{:U('Auth/authdis')}";
+                    $.post(url,{username:$(".user2").html(),str:str},function(data){
+                        if(data == 1){
+                            alert('更新成功！');
+                            window.location.reload();
+                        }else{
+                            alert('更新失败！');
+                        }
+                    });
+                }
+            });
+            $("input[name='allselect']").click(function(){
+                //单击全选
+                if($(this).attr('checked') == 'checked'){
+                    $(this).attr('checked',false);
+                    $(this).parent().parent().find("input").each(function(index){
+                        //取消所有选择
+                        if(index > 0){
+                            if($(this).attr('checked') == 'checked'){
+                                $(this).trigger('click');
+                            }
+                        }
+                    })
+                }else{
+                    $(this).attr('checked',1);
+                    $(this).parent().parent().find("input").each(function(index){
+                        //全选
+                        if(index > 0){
+                            if($(this).attr('checked') != 'checked'){
+                                $(this).trigger('click');
+                            }
+                        }
+                    })
+                }
+            });
+            //删除管理员
+            $(".deluser").click(function(){
+                var url = "{:U('Home/Auth/deluser')}";
+                var id = $(this).attr('uid');
+                if(confirm('确认删除该用户？')){
+                    $.post(url,{id:id},function(data){
+                        if(data == 1){
+                            alert('删除成功！');
+                            window.location.reload();
+                        }else{
+                            alert('删除失败！');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+[ 2015-05-04T00:47:32+08:00 ] 223.199.26.151 /UserCenter/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+ERR: 无法加载模块:UserCenter
+
+[ 2015-05-04T09:48:53+08:00 ] 116.30.175.54 /browserconfig.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Browserconfig
+
+[ 2015-05-04T10:38:04+08:00 ] 121.35.211.103 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T10:45:27+08:00 ] 121.35.211.103 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T10:45:29+08:00 ] 121.35.211.103 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T10:46:31+08:00 ] 121.35.211.103 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T10:46:32+08:00 ] 121.35.211.103 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T10:50:36+08:00 ] 59.40.99.120 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T11:48:38+08:00 ] 121.35.211.103 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T11:48:40+08:00 ] 121.35.211.103 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T11:50:40+08:00 ] 1.31.72.27 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T11:55:27+08:00 ] 121.35.211.103 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T13:13:40+08:00 ] 116.24.104.63 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T13:35:06+08:00 ] 117.166.43.46 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T13:46:31+08:00 ] 59.40.99.120 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T14:02:14+08:00 ] 121.35.211.103 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T15:06:09+08:00 ] 59.40.99.120 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T15:17:17+08:00 ] 59.40.99.120 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T15:26:42+08:00 ] 121.35.211.103 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T15:55:25+08:00 ] 111.179.85.221 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T17:21:47+08:00 ] 121.35.211.103 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T17:25:11+08:00 ] 140.255.50.222 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T18:42:02+08:00 ] 182.207.156.236 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T19:34:51+08:00 ] 121.68.176.13 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T19:34:51+08:00 ] 121.68.176.13 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T19:37:20+08:00 ] 5.254.98.73 /administrator/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+ERR: 无法加载模块:Administrator
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T20:17:14+08:00 ] 123.169.17.76 /browserconfig.xml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+ERR: 无法加载模块:Browserconfig
+
+[ 2015-05-04T20:44:58+08:00 ] 49.80.174.243 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T21:23:25+08:00 ] 192.99.47.149 /web/fckeditor/editor/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+ERR: 无法加载模块:Web
+
+[ 2015-05-04T21:23:29+08:00 ] 192.99.47.149 /web/fckeditor/editor/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+ERR: 无法加载模块:Web
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T21:52:57+08:00 ] 220.152.247.22 /favicon.ico
+ERR: 无法加载模块:Favicon
+
+[ 2015-05-04T22:48:36+08:00 ] 101.227.4.26 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Robots
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T23:01:09+08:00 ] 192.99.47.149 /webeditor/fckeditor/editor/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+ERR: 无法加载模块:Webeditor
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+
+[ 2015-05-04T23:42:57+08:00 ] 221.5.85.48 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+ERR: 无法加载模块:Favicon
+NOTIC: [2] include(): http:// wrapper is disabled in the server configuration by allow_url_include=0 /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(http://www.3595.com/ThinkPHP/Tpl/404_Erro.html): failed to open stream: no suitable wrapper could be found /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+NOTIC: [2] include(): Failed opening 'http://www.3595.com/ThinkPHP/Tpl/404_Erro.html' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') /home/www/php/main_page/huodong/ThinkPHP/Library/Think/Think.class.php 第 314 行.
+

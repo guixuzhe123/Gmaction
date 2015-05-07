@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>充值中心 | {$websetting.gsitename}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="{$websetting.gkeywords}">
+	<meta name="description" content="{$websetting.gdescription}">
+	<load href="{$Think.config.CDN_PUBLIC}/Css/head-newc.css"/>
+	<load href="{$Think.config.CDN_PUBLIC}/Css/footer-newc.css"/>
+	<load href="{$Think.config.CDN_PUBLIC}/Css/PayCenter/bodyleft.css"/>
+	<load href="http://www.3595.com/Public/Css/PayCenter/bodyright.css"/>
+	<load href="{$Think.config.CDN_PUBLIC}/Js/jquery-1.8.3.min.js"/>
+	<load href="{$Think.config.CDN_PUBLIC}/Js/slides.min.jquery.js" />
+	<load href="{$Think.config.CDN_PUBLIC}/Js/3595.js" />
+	<load href="http://www.3595.com/Public/Js/paycenter.js" />
+	<!--[if IE 8]>
+	<style type="text/css">
+		.page1submit{margin-top:0;}
+	</style>
+	<![endif]-->
+</head>
+<body style="{$adv['首页背景广告图地址']}">
+	<div class="head" border="0">
+		<!--tbar start-->
+		<include file="./Tpl/default/Public/tbar-newc.html" />
+		<!--tbar end-->
+		<!--header-->
+		<include file="./Tpl/default/Public/header-newc.html" />
+		<!--header-->
+	</div>
+	<div class="bodycontent">
+		<div class="bodyleft">
+			<div class="bodylefttop">选择充值方式</div>
+			<div class="bodyleftbottom">
+				<div class="tr1 ZHI" bili='10' paytype="4" code="alipay">
+					<div class="td1"><div class="pic1" style="width:28px;height:29px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/alipay.png') no-repeat;float:right;margin-top:18px;"></div></div>
+					<div class="td2"><span>支付宝充值</span></div>
+				</div>
+				<div class="clear1"></div>
+				<div class="tr1 YIN" bili='10' paytype="1" code="yeepay">
+					<div class="td1"><div class="pic1" style="width:32px;height:29px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/bankcard.png') no-repeat;float:right;margin-top:16px;"></div></div>
+					<div class="td2"><span class="current3">银行卡（易宝）充值</span></div>
+				</div>
+				<div class="clear1"></div>
+				<div class="tr1 JUN" bili='8' paytype="2" code="yeepay">
+					<div class="td1"><div class="pic1" style="width:28px;height:32px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/One-Card.png') no-repeat;float:right;margin-top:18px;"></div></div>
+					<div class="td2"><span>骏网一卡通（易宝）支付</span></div>
+				</div>
+				<div class="clear1"></div>
+				<div class="tr1 SHEN" bili='9' paytype="2" code="yeepay">
+					<div class="td1"><div class="pic1" style="width:33px;height:32px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/Easyown.png') no-repeat;float:right;margin-top:18px;"></div></div>
+					<div class="td2"><span>神州行（易宝）支付</span></div>
+				</div>
+				<div class="clear1"></div>
+				<div class="tr1 LIAN" bili='9' paytype="2" code="yeepay">
+					<div class="td1"><div class="pic1" style="width:28px;height:32px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/CHINAUNICOM.png') no-repeat;float:right;margin-top:18px;"></div></div>
+					<div class="td2"><span>联通卡（易宝）支付</span></div>
+				</div>
+				<div class="clear1"></div>
+				<div class="tr1 DIAN" bili='9' paytype="2" code="yeepay">
+					<div class="td1"><div class="pic1" style="width:28px;height:32px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/telecom.png') no-repeat;float:right;margin-top:18px;"></div></div>
+					<div class="td2"><span>电信卡（易宝）支付</span></div>
+				</div>
+				<div class="clear1"></div>
+				<div class="tr1 ZHENG" bili='8' paytype="2" code="yeepay">
+					<div class="td1"><div class="pic1" style="width:27px;height:32px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/journey.png') no-repeat;float:right;margin-top:18px;"></div></div>
+					<div class="td2"><span>征途卡（易宝）支付</span></div>
+				</div>
+				<div class="clear1"></div>
+				<div class="tr1 SHENG" bili='8' paytype="2" code="yeepay">
+					<div class="td1"><div class="pic1" style="width:28px;height:32px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/grand.png') no-repeat;float:right;margin-top:15px;"></div></div>
+					<div class="td2"><span>盛大卡（易宝）支付</span></div>
+				</div>
+				<div class="clear1"></div>
+				<div class="tr1 WANG" bili='8' paytype="2" code="yeepay">
+					<div class="td1"><div class="pic1" style="width:28px;height:32px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/Netease.png') no-repeat;float:right;margin-top:15px;"></div></div>
+					<div class="td2"><span>网易卡（易宝）支付</span></div>
+				</div>
+				<div class="clear1"></div>
+				<div class="tr1 TIAN" bili='8' paytype="2" code="yeepay">
+					<div class="td1"><div class="pic1" style="width:28px;height:32px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/sky.png') no-repeat;float:right;margin-top:15px;"></div></div>
+					<div class="td2"><span>天下一卡通支付</span></div>
+				</div>
+				<div class="clear1 PING"></div>
+				<div class="tr1" bili='10' paytype="3" code="platform">
+					<div class="td1"><div class="pic1" style="width:28px;height:32px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/platform.png') no-repeat;float:right;margin-top:15px;"></div></div>
+					<div class="td2"><span>平台币支付</span></div>
+				</div>
+				<div class="clear1"></div>
+				<div class="tr1" style="display:none;">
+					<div class="td1"><div class="pic1" style="width:28px;height:32px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/phone.png') no-repeat;float:right;margin-top:15px;"></div></div>
+					<div class="td2" onclick="javascript:alert('暂未开通！');"><span>全国电话充值V币</span></div>
+				</div>
+				<div class="clear1"></div>
+				<div class="tr1" style="display:none;">
+					<div class="td1"><div class="pic1" style="width:28px;height:32px;background:url('{$Think.config.CDN_PUBLIC}/Images/PayCenter/note.png') no-repeat;float:right;margin-top:15px;"></div></div>
+					<div class="td2" onclick="javascript:alert('暂未开通！');"><span>移动短信充值</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="bodyright">
+			<div class="brtr1">
+				<!-- <div class="brtr1-l">&nbsp;&nbsp;您当前选择的是<font color="#f6611f">“银行卡(易宝)充值”</font>的充值方式</div>
+				<div class="brtr1-r">为避免错误操作导致您的损失，请您认真填写以下信息！&nbsp;&nbsp;</div> -->
+			</div>
+			<form class='formFrame' action="__URL__/test" method="post" id="payForm">
+				<div class="brtr2">
+                    <div class="brtr2-head">充值到哪里：</div>
+					<div class="brtr2-body">
+						<input type="radio" name="pay_for" value="game">&nbsp;&nbsp;<label class="gamelabel"><font color="#f6611f">默认充值到游戏</font></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" style="margin-left:120px;" class="platinput" name="pay_for" value="platform">&nbsp;&nbsp;<label class="platlabel"><font color="#f6611f">充值到平台币</font></label>
+					</div>
+					<div class="platcoin" style="display:none;">
+						&nbsp;&nbsp;&nbsp;&nbsp;什么是平台币？<a style="color:#f6611f;" href="#">[查看详情]</a>
+					</div>
+					<div class="gamesel">
+						<div>选择游戏：</div>
+						<div class="selectgame"><span>请选择游戏</span></div>
+						<div class="selectserver"><span>请选择游戏服务器</span></div>
+					</div>
+					<div class="gamelist" style="display:none;">
+						<div class="char" actfor="gl">
+							<span>最近玩过</span><span style="margin-left:25px;">ABCDE</span><span>FGHIJK</span><span>LMNOP</span><span>QRSTU</span><span>VWXYZ</span>
+							<a class="close"></a>
+						</div>
+						<div class="clear1"></div>
+						<div class="newplay gl">
+							<!-- <input type="radio"/>&nbsp;<label></label> -->
+						</div>
+						<div class="gl">
+							<div class="gl-a">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio" name="glist"/>&nbsp;<label></label>
+									<input type="radio" name="glist"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-b">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio" name="glist"/>&nbsp;<label></label>
+									<!--<input type="radio" name="glist"/>&nbsp;<label></label>-->
+								</div>
+							</div>
+							<div class="gl-c">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio" name="glist"/>&nbsp;<label></label>
+									<input type="radio" name="glist"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-d">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio" name="glist"/>&nbsp;<label></label>
+									<input type="radio" name="glist"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-e">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio" name="glist"/>&nbsp;<label></label>
+									<input type="radio" name="glist"/>&nbsp;<label></label>
+								</div>
+							</div>
+						</div>
+						<div class="gl">
+							<div class="gl-f">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-g">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-h">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-i">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-j">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-k">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+						</div>
+						<div class="gl">
+							<div class="gl-l">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-m">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-n">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-o">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-p">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+						</div>
+						<div class="gl">
+							<div class="gl-q">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-r">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-s">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-t">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-u">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+						</div>
+						<div class="gl">
+							<div class="gl-v">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-w">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-x">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-y">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+							<div class="gl-z">
+								<div class="gl-pig"></div>
+								<div class="gl-name">
+									<input type="radio"/>&nbsp;<label></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="serverlist" style="display:none;">
+						<div class="char" actfor="sl">
+							<span>最近玩过</span><span style="margin-left:25px;display:none;">1-100服</span>
+							<span style="display:none;">101-200服</span>
+							<span style="display:none;">201-300服</span>
+							<span style="display:none;">301-400服</span>
+							<div class="fr"><span>选服</span>&nbsp;<div class="magdiv"><input type="text"/></div>服&nbsp;<a class="confirm"></a>&nbsp;<a class="close"></a></div>
+						</div>
+						<div class="clear1"></div>
+						<div class="newplay sl">
+							<!-- <input type="radio"/>&nbsp;<label>莽荒1服</label> -->
+						</div>
+						<div class="sl">
+							<!-- <input type="radio" name="slist" value="222"/>&nbsp;<label slid="1">莽荒1服</label>
+							<input type="radio" name="slist"/>&nbsp;<label slid="2">莽荒2服</label>
+							<input type="radio" name="slist"/>&nbsp;<label slid="3">莽荒3服</label> -->
+						</div>
+					</div>
+					<div class="brtr2-tr1">
+						充值账号：&nbsp;&nbsp;<font>{$userinfo['username']}</font>&nbsp;&nbsp;&nbsp;<a style="color:#f6611f;display:none;" href="#">[更改]</a>
+					</div>
+					<div class="brtr2-tr2">
+						选择金额：
+					</div>
+					<div class="brtr2-tr3 normalmoney">
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>10元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>20元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>50元</span>
+						</div>
+						<div class="moneyblock default">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>100元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>200元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>500元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>1000元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>2000元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>5000元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>10000元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>20000元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>50000元</span>
+						</div>
+						<div style="width:300px;margin-left:10px;margin-top:10px;">
+							<input type="radio" name="moneyblock" disabled/>&nbsp;&nbsp;<span>其他金额：&nbsp;</span><input type="text" style="width:120px;height:23px;" class="othermoney"/>元
+						</div>
+						<span style="margin-top:10px;display:inline-block;margin-left:12px;zoom:1;*display:inline;" class="emoney">对应元宝数量：</span>
+					</div>
+					<div class="brtr2-tr3 cardmoney" style="display:none;">
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>10元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>15元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>20元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>30元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>50元</span>
+						</div>
+						<div class="moneyblock default">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>100元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>200元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>300元</span>
+						</div>
+						<div class="moneyblock">
+							<input type="radio" name="moneyblock"/>&nbsp;&nbsp;<span>500元</span>
+						</div>
+						<br/>
+						<span style="margin-top:10px;display:inline-block;margin-left:12px;zoom:1;*display:inline;" class="emoney">对应元宝数量：</span>
+					</div>
+					<div class="brtr2-tr2 platcoin2">
+						账户余额：&nbsp;&nbsp;<font color="#f6611f">{$userinfo['money']}平台币</font>
+					</div>
+					<div class="brtr2-tr2 platcoin2">
+						交易密码：&nbsp;&nbsp;<input name="tradepassword" type="password" style="width:120px;height:23px;"/>&nbsp;&nbsp;<a href="/UserCenter/tradepassword" target="_blank" style="color:#999;font-size:12px;">设置交易密码</a>
+					</div>
+					<div class="brtr2-tr2 banktl">
+						选择银行：
+					</div>
+					<div class="bank" style="display:inline-block;zoom:1;*display:inline;">
+						<ul>
+							<li>
+								<input type="radio" name="bankid1" value="BOC-NET-B2C" id="bank1" checked="checked">
+								<a href="javascript:;" class="banka" forradio="bank1">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/zhongguo.jpg" alt="中国银行" border="0">
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="bankid1" value="ICBC-NET-B2C" id="bank2" >
+								<a href="javascript:;" class="banka" forradio="bank2">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/gongsang.jpg" alt="中国工商银行" border="0">
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="bankid1" value="CMBCHINA-NET-B2C" id="bank3" >
+								<a href="javascript:;" class="banka" forradio="bank3">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/zhaoshang.jpg" alt="招商银行" border="0">
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="bankid1" value="CCB-NET-B2C" id="bank4">
+								<a href="javascript:;" class="banka" forradio="bank4">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/jianshe.jpg" alt="中国建设银行" border="0">
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="bankid1" value="POST-NET-B2C" id="bank5">
+								<a href="javascript:;" class="banka" forradio="bank5">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/youzheng.jpg" alt="中国邮政银行" border="0">
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="bankid1" value="GDB-NET-B2C" id="bank6">
+								<a href="javascript:;" class="banka" forradio="bank6">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/guangfa.jpg" alt="广发银行" border="0">
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="bankid1" value="CIB-NET-B2C" id="bank7">
+								<a href="javascript:;" class="banka" forradio="bank7">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/xingye.jpg" alt="兴业银行" border="0">
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="bankid1" value="ABC-NET-B2C" id="bank8">
+								<a href="javascript:;" class="banka" forradio="bank8">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/nongye.jpg" alt="中国农业银行" border="0">
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="bankid1" value="BOCO-NET-B2C" id="bank9">
+								<a href="javascript:;" class="banka" forradio="bank9">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/jiaotong.jpg" alt="交通银行" border="0">
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="bankid1" value="CEB-NET-B2C" id="bank10">
+								<a href="javascript:;" class="banka" forradio="bank10">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/guangda.jpg" alt="中国光大银行" border="0">
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="bankid1" value="ECITIC-NET-B2C" id="bank11">
+								<a href="javascript:;" class="banka" forradio="bank11">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/zhongxin.jpg" alt="中信银行" border="0">
+								</a>
+							</li>
+							<li>
+								<input type="radio" name="bankid1" value="CMBC-NET-B2C" id="bank12">
+								<a href="javascript:;" class="banka" forradio="bank12">
+									<img src="{$Think.config.CDN_PUBLIC}/Images/PayCenter/mingsheng.jpg" alt="中国民生银行" border="0">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="page1submit"></div>
+				</div>
+			</form>
+			<form name="form2" action="http://www.3595.com/PayCenter/confirmPay" method="post">
+				<input type="hidden" name="pay_for"/>
+				<input type="hidden" name="payMoney" value="100"/>
+				<input type="hidden" name="rate2" value="100"/>
+				<input type="hidden" name="moneyNum" value="100"/>
+				<input type="hidden" name="gamemoney"/>
+				<input type="hidden" name="code" />
+				<input type="hidden" name="gid" />
+				<input type="hidden" name="sid" />
+				<input type="hidden" name="username" value="{$userinfo['username']}" />
+				<input type="hidden" name="paymen" value="{$userinfo['username']}" />
+				<input type="hidden" name="reusername" value="{$userinfo['username']}" />
+				<input type="hidden" name="bankid"/>
+			</form>
+			<div class='brtr2 hint' style="border-bottom:none;width:750px;padding-bottom:10px;line-height:30px;">
+			</div>
+		</div>
+		<div class="cb"></div>
+	</div>
+	<div style="display:none;" class="paymethod">{$paymethod}</div>
+	<include file="./Tpl/default/Public/footer-noindex.html" />
+	<include file="./Tpl/default/Public/weblogin.html" />
+	<div class="hidedata" style="display:none;">
+		<volist name="allgames" id="vo">
+			<div class="gamedata" gid="{$vo.gid}" firstletter="{$vo.firstletter}">{$vo.name}</div>
+		</volist>
+		<volist name="userinfo.lastgameserver" id="vo1">
+			<div class="lastgameserver" sid="{$vo1.sid}" gid="{$vo1.gid}" status="{$vo1.status}" platcode="{$vo1.platcode}">{$vo1.name}</div>
+		</volist>
+		<div class="leftselect">{$leftselect}</div>
+	</div>
+</body>
+</html>

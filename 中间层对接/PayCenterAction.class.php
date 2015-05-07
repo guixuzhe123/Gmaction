@@ -840,12 +840,9 @@ class PayCenterAction extends PublicAction
 				'order_id'		=>	$pay_orderid,
 				'time'			=>	time(),
 			);
-			sort($data);
-			$str = array();
-			foreach($data as $key => $value){
-				$str[] = $key . "=" . $value;
-			}
-			$data['sign'] = md5(strtolower(implode($str,"&") . C('APP_KEY')));
+			ksort($data);
+			$str = http_build_query($data);
+			$data['sign'] = md5(strtolower($str . C('APP_KEY')));
 			$data = http_build_query($data);
 			$options = array(
 				'http'	=>	array(
@@ -1053,12 +1050,9 @@ public function sjf_onebyone(){
 			'username'		=>	$username,
 			'time'			=>	time()
 		);
-		sort($data);
-		$str = array();
-		foreach($data as $key => $value){
-			$str[] = $key . "=" . $value;
-		}
-		$data['sign'] = md5(strtolower(implode($str, "&") . C('APP_KEY')));
+		ksort($data);
+		$str = http_build_query($data)
+		$data['sign'] = md5(strtolower($str . C('APP_KEY')));
 
 		$data = http_build_query($data);
 		$options = array(

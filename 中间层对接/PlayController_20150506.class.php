@@ -77,39 +77,44 @@ class PlayController extends Controller {
 				$mark = $serverdata['mark'];
 				$servername = $serverdata['name'];
 				/* 将 key 写入数据库 */
-				$key = md5($username.time().'123');
 				$gp=new \Index\Model\GamePlayModel();
-				$gpcondition['username'] = $username;
-				$gpcondition['sid'] = $sid;
-				$gpcondition['gameid'] = $gid;
-				$gprs = $gp->where($gpcondition)->find();
-				if( empty($gprs) ){
-					$gpdata['username'] = $username;
-					$gpdata['gameid'] = $gid;
-					$gpdata['sid'] = $sid;
-					$gpdata['playtime'] = time();
-					$gpdata['mark'] = $mark;
-					$gpdata['key'] = $key;
-					$gp->add($gpdata);
-				}else{
-					$gpdata2['key'] = $key;
-					$gpdata2['mark'] = $mark;
-					$gpdata2['playtime'] = time();
-					$gpcondition2['gpid'] = $gprs['gpid'];
-					$gp->where($gpcondition2)->save($gpdata2);
-				}
+                $key = C('APP_KEY');
+                $platform_id = C('PLATFORM_ID');
+                $check = array(
+                    'sid'           =>  $mark,
+                    'platform_id'   =>  $platform_id,    
+                    'username'      =>  $username,
+                    'gid'           =>  $gid,
+                    'time'          =>  time(),
+                    'server_title'  =>  urlencode($servername),
+                );
+                ksort($check);
+                $str = http_build_query($check);
+                $sign = md5(strtolower($str . $key));
+
+                $savedate = array(
+                	'username'	=>	$check['username'],
+                	'key'		=>	$sign,
+                	'gameid'	=>	$gid,
+                	'sid'		=>	$sid
+                	'mark'		=>	$mark,
+                	'playtime'	=>	$check['time'],
+                	);	
+                $gp->add($savedate);
+
 				$posturl = "http://ad1.3595.com/index.php/Home/MengADManger/CollectorLoginTime";
 				$post_fields = 'username='.$username.'&logintime='.time();
 				$result = postcurl($posturl,$post_fields);
+				
 				echo "<meta http-equiv='Content-Type'' content='text/html; charset=utf-8'>
 				<form style='display:none;' id='form1' name='form1' method='post' action='http://play.3595.com/play.php' target='_self'>
-				<input name='username' type='text' value='3595mhj_".$username."' />
-				<input name='key' type='text' value='".$key."'/>
-				<input name='mark' type='text' value='".$mark."'/>
+				<input name='sid' type='text' value='".$mark."' />
+				<input name='platform_id' type='text' value='".$platform_id."'/>
+				<input name='username' type='text' value='".$username."'/>
 				<input name='gid' type='text' value='".$gid."'/>
-				<input name='urlorigin' type='text' value='3595mhj'/>
-				<input name='client' type='text' value='0'/>
-				<input name='servername' type='text' value='".$servername."'/>
+				<input name='time' type='text' value='" . $check['time'] . "'/>
+				<input name='server_title' type='text' value='" . $servername . "'/>
+				<input name='sign' type='text' value='".$sign."'/>
 				</form>
 				<script type='text/javascript'>function load_submit(){document.form1.submit()}load_submit();</script>";
 				exit;
@@ -293,12 +298,9 @@ class PlayController extends Controller {
                     'time'          =>  time(),
                     'server_title'  =>  urlencode($servername),
                 );
-                sort($check);
-                $str = array();
-                foreach($check as $key => $value){
-                    $str[] = $key . "=" . $value;
-                }
-                $sign = md5(strtolower(implode($str,"&") . $key));
+                ksort($check);
+                $str = http_build_query($check);
+                $sign = md5(strtolower($str . $key));
 
                 $savedate = array(
                 	'username'	=>	$check['username'],

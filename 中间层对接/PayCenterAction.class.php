@@ -828,24 +828,15 @@ class PayCenterAction extends PublicAction
 			//$payip="59.34.148.252";
 			//$payport=80;
 
-			$k = new Model("server");
-			$server = $k->where(array('sid' => $sid))->find();
 			$data = array(
-				'sid'			=>	$server['mark'],
-				'platform_id'	=>	C('PLATFORM_ID'),
-				'username'		=>	$username,
-				'charge_time'	=>	$pay_orderid,
-				'money'			=>	$dhmoney,
+				'platcode'		=>	$paycode,
+				'm_emoney'		=>	$dhmoney,
+				'm_account'		=>	"3595mhj_" . $username,
+				'm_billno'		=>	"3595mhj_" . $pay_orderid,
 				'ip'			=>	$ip,
-				'order_id'		=>	$pay_orderid,
-				'time'			=>	time(),
+				'source'		=>	$source,
+				'extra_money'	=>	$extra_money
 			);
-			sort($data);
-			$str = array();
-			foreach($data as $key => $value){
-				$str[] = $key . "=" . $value;
-			}
-			$data['sign'] = md5(strtolower(implode($str,"&") . C('APP_KEY')));
 			$data = http_build_query($data);
 			$options = array(
 				'http'	=>	array(
